@@ -6,7 +6,7 @@ from PIL import Image
 app = Flask(__name__)
 
 # Ключ теперь безопасно берётся из настроек сервера
-client = genai.Client(api_key=os.environ.get("AQ.Ab8RN6K8_f1k7JK13mocHkbM4K6xIrVF5_zxfjOqgCzpsqzDvg"))
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 HTML_PAGE = """
 <!DOCTYPE html>
